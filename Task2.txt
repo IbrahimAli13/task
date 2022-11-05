@@ -1,0 +1,23 @@
+- Class Methods : 
+Let's Imagine We have a record store application and three albums we can add to our record store.
+However, we don't have a way to see all of the albums at once.
+That’s kind of a problem.
+After all, we want to show a list of albums on our home page.
+We need a method that will show all of the items on a list, but an instance method isn't a good way to do this.
+An instance method is only called on a single instance of an object.
+An all() method, on the other hand, involves every instance of the object on the list.
+Whenever we need a method that should deal with multiple instances of a class, we should use a class method. Here are a few examples of potential class methods we might want in our record store application:
+1 - all(): returns all albums
+2 - find(): finds an album by its name
+3 - top_rated(): finds the top-rated album
+Each of these methods involve access to all albums, not just one.
+For instance, the find() methods needs to actually be able to look through all albums to find what it’s looking for, so it shouldn’t be an instance method, either.
+The top_rated() method can only determine which album should be top-rated if it can compare all the albums.
+
+- Instance Methods : 
+For instance methods we can imagine a calculator application ,in here we want to add "stand-alone" methods so they'll end up as instance methods for example we can create :
+1 - sum methods like sum()
+2 - divide methods like divide() 
+3 - to_f() method that converts integer to float for smoother divide operations 
+as we can see these methods and operation doesnt need to have acces to the whole class but to only the object it's operating on(instance) 
+
