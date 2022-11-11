@@ -1,5 +1,5 @@
 <p style="color: green"><%= notice %></p>
-
+<%=button_to "Sign_out",destroy_user_session_path, method: :delete, form: {data: {turbo_confirm: "Are You Sure"}}%>
 <h1>Users</h1>
 
 <table class="table table-dark table-striped">
